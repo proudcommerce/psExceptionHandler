@@ -1,7 +1,7 @@
 # psExceptionHandler
 
 Extended exception/throwable handling for OXID 6.
-Shows meaningful exception messages. For more info see (OXID PR #609)[https://github.com/OXID-eSales/oxideshop_ce/pull/609].
+Shows meaningful exception messages. For more info see [OXID PR #609](https://github.com/OXID-eSales/oxideshop_ce/pull/609).
 
 ## Installation
 
@@ -19,27 +19,27 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__ . '/modules/ps/psexceptionhandler/functions.php');
 ```
 
-##Changelog
+## Changelog
 
-	2017-11-27	1.0.0	Module release (OXID 6 )
-	
-##License
+2017-11-27	1.0.0	Module release (OXID 6 )
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+## License
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-##Copyright
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-	Proud Sourcing GmbH / shoptimax GmbH
-	www.proudcommerce.com / www.shoptimax.de
+
+## Copyright
+
+Proud Sourcing GmbH / shoptimax GmbH
+www.proudcommerce.com / www.shoptimax.de
