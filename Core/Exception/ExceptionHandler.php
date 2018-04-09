@@ -33,8 +33,7 @@ class ExceptionHandler extends \OxidEsales\Eshop\Core\Exception\ExceptionHandler
      */
     public function handleUncaughtThrowable($exception)
     {
-        $ver = (float)phpversion();
-        if ($ver >= 7.0 && $exception instanceof \Error) {
+        if (version_compare(PHP_VERSION, '7.0.0') >= 0 && $exception instanceof \Error) {
             $this->handleUncaughtError($exception);
         } else {
             parent::handleUncaughtException($exception); // Calling Oxid handler.
