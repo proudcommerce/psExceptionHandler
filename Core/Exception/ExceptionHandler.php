@@ -20,13 +20,6 @@ namespace ProudSourcing\ExceptionHandler\Core\Exception;
 class ExceptionHandler extends \OxidEsales\Eshop\Core\Exception\ExceptionHandler
 {
     /**
-     * Shows throwable message
-     *
-     * @var bool
-     */
-    protected $_blShowDebugMessage = true;
-
-    /**
      * Handles exception/throwable/error
      *
      * @param $exception
@@ -49,9 +42,10 @@ class ExceptionHandler extends \OxidEsales\Eshop\Core\Exception\ExceptionHandler
      **/
     private function handleUncaughtError(\Error $error)
     {
-        if($this->_blShowDebugMessage) {
+        if ($this->_iDebug) {
             var_dump($error);
         }
+
         $this->writeErrorToLog($error);
         if (defined('OXID_PHP_UNIT')) {
             return;
